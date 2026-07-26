@@ -1,0 +1,45 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches: [ "release" ]  # 当代码推送到 release 分支时触发。如果您的主分支是 main，请修改为 "main"
+  workflow_dispatch:        # 也支持在GitHub网页上手动触发
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. 拉取代码
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. 设置 Node.js 环境
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'  # 根据您的项目需求调整，建议使用 20 或 18
+
+      # 3. 安装依赖 (本项目使用 pnpm)
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+          run_install: false
+
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile
+
+      # 4. 构建网站
+      - name: Build Project
+        run:  npm run docs:build # 您的构建命令，如果使用 npm 则改为 npm run docs:build
+
+      # 5. 部署到服务器 (通过 SSH)
+      - name: Deploy to Server
+        uses: easingthemes/ssh-deploy@main
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          REMOTE_HOST: ${{ secrets.SERVER_HOST }}
+          REMOTE_USER: ${{ secrets.SERVER_USER }}
+          TARGET: ${{ secrets.SERVER_TARGET }}
+          SOURCE: "docs/.vitepress/dist/" # 构建产物的目录
+          ARGS: "-rlgoDzvc -i --delete"  # rsync 参数，--delete 会删除服务器上旧文件
