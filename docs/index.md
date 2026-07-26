@@ -25,5 +25,5 @@ features:
   - title: AIbased
     details: AI辅助翻译、索引、归档、校正
   - title: English Learn
-    details: 英语学习
+    details: 地道表达，提升您的阅读与写作
 ---
