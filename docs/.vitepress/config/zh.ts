@@ -23,7 +23,7 @@ export default defineConfig({
     footer: {
       message: 'Copyright © 2026-present <a href="http://traveldaily.top/about">TravelDaily</a>.' +
       '&nbsp;&nbsp;&nbsp;✧ <a href="https://fbll.asia">tavel_hub</a>.' +   
-      '&nbsp;&nbsp;&nbsp;✧ <a href="https://justin3go.com/about">open in Github</a>',
+      '&nbsp;&nbsp;&nbsp;✧ <a href="https://github.com/dongPolya/Traveldaily">open in Github</a>',
       
       // copyright: 'Copyright © 2022-present <a href="https://justin3go.com/about">Justin3go</a>.',
     },
