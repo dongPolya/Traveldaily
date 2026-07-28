@@ -5,6 +5,7 @@ tags:
   - Travel
   - Story
   - Cycling
+  - Essay
 ---
 
 # A Wild Ride Along The River
@@ -35,4 +36,4 @@ I never let up, heading north without a pause. Song shouted futile protests from
 
 Before they could react, I veered off onto a small path leading west, just before the bridge, and they had no choice but to chase. This trail was wild and little-trodden—a route I'd carefully scouted. Lush grass lined the way, eerily beautiful, damp air clinging to the thick greenery. Deeper trails branched off below the slopes. The river's moisture seeped into everything, and the already chilly weather made us shiver in our thin clothes. We pressed west, and their initial anxiety gave way to fascination with the haunting scenery. Yellow jokes and laughter again rang through that pristine land. The road seemed endless, stretching all the way to Huaiyin District. As time bled away in the infinite ride, the question of going home resurfaced, and Song grew increasingly restless. In that empty lane and heavy dampness, he started to feel hallucinatory, his unease mounting. Suddenly, he couldn't take it anymore—he roared and charged at me on his bike. I stomped on the pedals, knowing my Shihulan could outrun his. We flew like madmen, letting the bikes carry us to the farthest, wildest reaches. I don't know how long we rode, but then a lightning bolt split the gloomy sky, and a few raindrops touched my ears. Only then did I realise how late it was—so I finally gave the order to turn back.
 
-"That doesn't make any sense!" Song yelled. "Everyone else's rides are loops—yours is just backtracking!" The clouds churned overhead as our three wobbling bikes tore down that manic little path. I laughed like a maniac, pouring every ounce of passion into the speed, letting it all go.
+"That doesn't make any sense!" Song yelled. "Everyone else's rides are loops——yours is just backtracking!" The clouds churned overhead as our three wobbling bikes tore down that manic little path. I laughed like a maniac, pouring every ounce of passion into the speed, letting it all go.
