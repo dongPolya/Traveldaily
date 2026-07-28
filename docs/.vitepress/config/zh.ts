@@ -47,7 +47,7 @@ export default defineConfig({
     ],
 
     editLink: {
-      pattern: "https://github.com/dongPolya/Traveldaily/edit/master/docs/:pat",
+      pattern: "https://github.com/dongPolya/Traveldaily/edit/main/docs/:path",
       text: "在 GitHub 上编辑此页",
     },
     returnToTopLabel: "回到顶部",
