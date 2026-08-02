@@ -49,4 +49,4 @@ jobs:
         run: |
           echo "${{ secrets.SERVER_SSH_KEY }}" > /tmp/deploy_key
           chmod 600 /tmp/deploy_key
-          rsync -avz --no-perms --no-owner --no-group -e "ssh -i /tmp/deploy_key -o StrictHostKeyChecking=no -p 22" docs/.vitepress/dist/ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_TARGET }}
+          rsync -avz --no-perms --no-owner --no-group --exclude='*@-----BEGIN*' --exclude='OPENSSH' --exclude='PRIVATE' -e "ssh -i /tmp/deploy_key -o StrictHostKeyChecking=no -p 22" docs/.vitepress/dist/ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_TARGET }}
