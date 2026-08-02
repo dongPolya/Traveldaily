@@ -47,11 +47,6 @@ jobs:
       # 6. 部署到服务器
       - name: Manual Deploy via SSH
         run: |
-          # 1. 将私钥写入临时文件
           echo "${{ secrets.SERVER_SSH_KEY }}" > /tmp/deploy_key
           chmod 600 /tmp/deploy_key
-          
-          # 2. 使用 rsync 通过 SSH 手动同步文件
-          rsync -avz -e "ssh -i /tmp/deploy_key -o StrictHostKeyChecking=no -p 22" \
-            docs/.vitepress/dist/ \
-            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_TARGET }}
+          rsync -avz --no-perms --no-owner --no-group -e "ssh -i /tmp/deploy_key -o StrictHostKeyChecking=no -p 22" docs/.vitepress/dist/ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_TARGET }}
