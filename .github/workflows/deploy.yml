@@ -46,8 +46,8 @@ jobs:
 
       # 6. 部署到服务器
       - name: Deploy to Server
-       uses: easingthemes/ssh-deploy@main
-       with:
+        uses: easingthemes/ssh-deploy@main
+        with:
            SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
            REMOTE_HOST: ${{ secrets.SERVER_HOST }}
            REMOTE_USER: ${{ secrets.SERVER_USER }}
