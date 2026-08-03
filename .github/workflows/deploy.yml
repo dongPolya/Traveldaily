@@ -29,15 +29,9 @@ jobs:
       - name: Build Project
         run: npm run docs:build
 
-      - name: Deploy via Password Script
+      - name: Deploy via tar pipe
         run: |
-          cat > /tmp/deploy.sh << 'EOF'
-          #!/bin/bash
-          set -x
-          DEST="${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/www/wwwroot/47.83.18.133_18040/"
-          scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r docs/.vitepress/dist/* "$DEST"
-          EOF
-          chmod +x /tmp/deploy.sh
-          sshpass -p "${{ secrets.SERVER_PASSWORD }}" /tmp/deploy.sh
-        env:
-          SERVER_PASSWORD: ${{ secrets.SERVER_PASSWORD }}
+             echo "${{ secrets.SSH_KEY_BASE64 }}" | base64 -d > /tmp/deploy_key
+             chmod 600 /tmp/deploy_key
+             cd docs/.vitepress/dist
+             tar czf - . | ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i /tmp/deploy_key ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "cd ${{ secrets.SERVER_TARGET }} && tar xzf -"
