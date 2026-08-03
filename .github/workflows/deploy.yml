@@ -29,19 +29,9 @@ jobs:
       - name: Build Project
         run: npm run docs:build
 
-      - name: Deploy via Password
+      - name: Debug SCP Command
         run: |
           set -x
-          echo "=== Debug Start ==="
-          echo "Password length: ${#SERVER_PASSWORD}"
-          echo "User: ${{ secrets.SERVER_USER }}"
-          echo "Host: ${{ secrets.SERVER_HOST }}"
-          echo "Target: ${{ secrets.SERVER_TARGET }}"
-          echo "=== Debug End ==="
-          sudo apt-get update
-          sudo apt-get install -y sshpass
-          sshpass -p "${{ secrets.SERVER_PASSWORD }}" scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r docs/.vitepress/dist/* ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_TARGET }}
-        env:
-          SERVER_PASSWORD: ${{ secrets.SERVER_PASSWORD }}
-
-
+          echo "=== SCP Command Dump ==="
+          echo "scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r docs/.vitepress/dist/* ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_TARGET }}"
+          echo "=== Dump End ==="
