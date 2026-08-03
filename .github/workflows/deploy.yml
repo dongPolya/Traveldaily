@@ -29,11 +29,12 @@ jobs:
       - name: Build Project
         run: npm run docs:build
 
-      - name: Deploy via tar (two steps)
+      - name: Deploy via SSH
         run: |
-          echo "${{ secrets.SSH_KEY_BASE64 }}" | base64 -d > /tmp/deploy_key
-          chmod 600 /tmp/deploy_key
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SERVER_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
           cd docs/.vitepress/dist
           tar czf /tmp/deploy.tar.gz .
-          scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i /tmp/deploy_key /tmp/deploy.tar.gz ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_TARGET }}
-          ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i /tmp/deploy_key ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "cd ${{ secrets.SERVER_TARGET }} && tar xzf deploy.tar.gz && rm deploy.tar.gz"
+          scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i ~/.ssh/deploy_key /tmp/deploy.tar.gz ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_TARGET }}
+          ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i ~/.ssh/deploy_key ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "cd ${{ secrets.SERVER_TARGET }} && tar xzf deploy.tar.gz && rm deploy.tar.gz"
