@@ -34,7 +34,8 @@ jobs:
           cat > /tmp/deploy.sh << 'EOF'
           #!/bin/bash
           set -x
-          scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r docs/.vitepress/dist/* ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/www/wwwroot/47.83.18.133_18040/
+          DEST="${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/www/wwwroot/47.83.18.133_18040/"
+          scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r docs/.vitepress/dist/* "$DEST"
           EOF
           chmod +x /tmp/deploy.sh
           sshpass -p "${{ secrets.SERVER_PASSWORD }}" /tmp/deploy.sh
