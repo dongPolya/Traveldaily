@@ -47,7 +47,6 @@ jobs:
       # 6. 部署到服务器
       - name: Manual Deploy via SSH (SCP)
         run: |
-          echo "${{ secrets.SERVER_SSH_KEY }}" > /tmp/deploy_key
+          printf '%s\n' "${{ secrets.SERVER_SSH_KEY }}" > /tmp/deploy_key
           chmod 600 /tmp/deploy_key
-          # 使用 scp 递归复制整个 dist 目录
           scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i /tmp/deploy_key -r docs/.vitepress/dist/* ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_TARGET }}
