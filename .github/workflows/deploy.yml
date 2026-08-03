@@ -47,5 +47,6 @@ jobs:
       # 6. 部署到服务器
       - name: Manual Deploy via SSH (SCP)
         run: |
-          chmod 600 deploy_key
-          scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i deploy_key -r docs/.vitepress/dist/* ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_TARGET }}
+          sudo apt-get update
+          sudo apt-get install -y sshpass
+          sshpass -p "${{ secrets.SERVER_PASSWORD }}" scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r docs/.vitepress/dist/* ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_TARGET }}
