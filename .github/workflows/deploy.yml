@@ -29,8 +29,14 @@ jobs:
       - name: Build Project
         run: npm run docs:build
 
-      - name: Deploy via Password
+      - name: Deploy via Password Script
         run: |
-          sudo apt-get update
-          sudo apt-get install -y sshpass
-          sshpass -p "${{ secrets.SERVER_PASSWORD }}" scp -v -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r docs/.vitepress/dist/* ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/www/wwwroot/47.83.18.133_18041/
+          cat > /tmp/deploy.sh << 'EOF'
+          #!/bin/bash
+          set -x
+          scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r docs/.vitepress/dist/* ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/www/wwwroot/47.83.18.133_18041/
+          EOF
+          chmod +x /tmp/deploy.sh
+          sshpass -p "${{ secrets.SERVER_PASSWORD }}" /tmp/deploy.sh
+        env:
+          SERVER_PASSWORD: ${{ secrets.SERVER_PASSWORD }}
