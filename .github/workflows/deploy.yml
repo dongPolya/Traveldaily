@@ -45,12 +45,10 @@ jobs:
           echo "${{ secrets.SERVER_SSH_KEY }}" | tail -n 1
 
       # 6. 部署到服务器
-      - name: Deploy to Server
-        uses: easingthemes/ssh-deploy@main
-        with:
-           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-           REMOTE_HOST: ${{ secrets.SERVER_HOST }}
-           REMOTE_USER: ${{ secrets.SERVER_USER }}
-           TARGET: ${{ secrets.SERVER_TARGET }}
-           SOURCE: "docs/.vitepress/dist/" # 构建产物的目录
-           ARGS: "-rlgoDzvc -i --delete"  # rsync 参数，--delete 
+      - name: Manual Deploy via SSH
+        run: |
+          cat << 'EOF' > /tmp/deploy_key
+          ${{ secrets.SERVER_SSH_KEY }}
+          EOF
+          chmod 600 /tmp/deploy_key
+          rsync -avz --no-perms --no-owner --no-group -e "ssh -i /tmp/deploy_key -o StrictHostKeyChecking=no -p 22" docs/.vitepress/dist/ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_TARGET }}
