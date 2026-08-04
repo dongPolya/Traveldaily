@@ -38,7 +38,7 @@ jobs:
           cd docs/.vitepress/dist
           tar czf /tmp/dist.tar.gz .
           
-          # 2. 通过 scp 传输压缩包到服务器
+          # 2. 通过 scp 传输压缩包服务器
           sshpass -p "${{ secrets.SERVER_PASSWORD }}" scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /tmp/dist.tar.gz ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/tmp/
           
           # 3. 在服务器上解压到目标目录（路径变量用双引号包裹，防止Shell解析错误）
