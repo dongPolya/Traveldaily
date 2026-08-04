@@ -31,17 +31,17 @@ jobs:
 
       - name: Deploy via tar with Password
         run: |
-          # 1. 安装 sshpass
+          # 安装 sshpass
           sudo apt-get update
           sudo apt-get install -y sshpass
 
-          # 2. 进入构建目录并打包
+          # 进入构建目录并打包
           cd docs/.vitepress/dist
           tar -czf /tmp/website.tar.gz .
 
-          # 3. 传输压缩包（密码通过环境变量传递）
+          # 传输压缩包
           export SSHPASS="${{ secrets.SERVER_PASSWORD }}"
           sshpass -e scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /tmp/website.tar.gz ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/tmp/
 
-          # 4. 在服务器上解压（密码同样通过环境变量传递）
-          sshpass -e ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "mkdir -p ${{ secrets.SERVER_TARGET }} && tar -xzf /tmp/website.tar.gz -C ${{ secrets.SERVER_TARGET }} && rm /tmp/website.tar.gz"
+          # 在服务器上解压到指定的网站根目录
+          sshpass -e ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "mkdir -p /www/wwwroot/47.83.18.133_18040/justin3go.com/docs/.vitepress/dist && tar -xzf /tmp/website.tar.gz -C /www/wwwroot/47.83.18.133_18040/justin3go.com/docs/.vitepress/dist && rm /tmp/website.tar.gz"
