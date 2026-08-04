@@ -29,14 +29,14 @@ jobs:
       - name: Build Project
         run: npm run docs:build
 
-      - name: Deploy via SSH with env
-        env:
-          SSH_KEY: ${{ secrets.SSH_KEY }}
+      - name: Deploy via Password Script
         run: |
-          # 使用 here-doc 将环境变量写入文件，这是最安全的 shell 方式
-          cat <<< "$SSH_KEY" > /tmp/deploy_key
-          chmod 600 /tmp/deploy_key
+          # 1. 在本地打包 dist 目录
           cd docs/.vitepress/dist
-          tar czf /tmp/deploy.tar.gz .
-          scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i /tmp/deploy_key /tmp/deploy.tar.gz ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_TARGET }}
-          ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i /tmp/deploy_key ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "cd ${{ secrets.SERVER_TARGET }} && tar xzf deploy.tar.gz && rm deploy.tar.gz"
+          tar czf /tmp/dist.tar.gz .
+          
+          # 2. 通过 scp 传输压缩包到服务器
+          sshpass -p "${{ secrets.SERVER_PASSWORD }}" scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /tmp/dist.tar.gz ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/tmp/
+          
+          # 3. 在服务器上解压到目标目录
+          sshpass -p "${{ secrets.SERVER_PASSWORD }}" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "mkdir -p ${{ secrets.SERVER_TARGET }} && tar xzf /tmp/dist.tar.gz -C ${{ secrets.SERVER_TARGET }} && rm /tmp/dist.tar.gz"
