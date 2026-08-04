@@ -11,7 +11,7 @@ tags:
   - Context Window
 ---
 
-# 丢掉沉重的记忆：Codex、Claude Code 与 OpenCode 的上下文压缩术
+# suck丢掉沉重的记忆：Codex、Claude Code 与 OpenCode 的上下文压缩术
 
 > ✨文章摘要（AI生成）
 >
