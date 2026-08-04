@@ -41,7 +41,7 @@ export default defineConfig({
 
 
     editLink: {
-      pattern: "https://github.com/dongPolya/Traveldaily/edit/main/docs/:path"
+      pattern: "https://github.com/dongPolya/Traveldaily/edit/main/docs/en/:path"
     },
   },
 })
