@@ -31,13 +31,15 @@ jobs:
 
       - name: Deploy via Password Script
         run: |
-          cat > /tmp/deploy.sh << 'EOF'
-          #!/bin/bash
-          set -x
-          DEST="${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/www/wwwroot/47.83.18.133_18040/"
-          scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r docs/.vitepress/dist/* "$DEST"
-          EOF
-          chmod +x /tmp/deploy.sh
-          sshpass -p "${{ secrets.SERVER_PASSWORD }}" /tmp/deploy.sh
-        env:
-          SERVER_PASSWORD: ${{ secrets.SERVER_PASSWORD }}
+          # 安装 sshpass
+          sudo apt-get update && sudo apt-get install -y sshpass
+          
+          # 1. 在本地打包 dist 目录
+          cd docs/.vitepress/dist
+          tar czf /tmp/dist.tar.gz .
+          
+          # 2. 通过 scp 传输压缩包到服务器
+          sshpass -p "${{ secrets.SERVER_PASSWORD }}" scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /tmp/dist.tar.gz ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/tmp/
+          
+          # 3. 在服务器上解压到目标目录（路径变量用双引号包裹，防止Shell解析错误）
+          sshpass -p "${{ secrets.SERVER_PASSWORD }}" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "mkdir -p \"${{ secrets.SERVER_TARGET }}\" && tar xzf /tmp/dist.tar.gz -C \"${{ secrets.SERVER_TARGET }}\" && rm /tmp/dist.tar.gz"
