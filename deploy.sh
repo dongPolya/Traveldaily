@@ -23,4 +23,8 @@ sshpass -e scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /tmp/
 
 # 4. 解压
 echo "=== 服务器解压 ==="
-sshpass -e ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $USER@$HOST "mkdir -p $TARGET && tar -xzf /tmp/website.tar.gz -C $TARGET && echo '部署完成'"
+sshpass -e ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $USER@$HOST "
+  mkdir -p $TARGET &&
+  tar -xzvf /tmp/website.tar.gz -C $TARGET 2>&1 &&
+  echo '解压成功'
+"
