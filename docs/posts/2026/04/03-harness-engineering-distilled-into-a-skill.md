@@ -1,5 +1,5 @@
 ---
-title: 我把 Harness Engineering 也提炼成了 SKILL
+title: Fuck You
 date: 2026-04-03
 tags:
   - Harness Engineering
@@ -11,7 +11,7 @@ tags:
   - Claude Code
 ---
 
-# 我把 Harness Engineering 也提炼成了 SKILL
+# Fuck You
 
 > ✨文章摘要（AI生成）
 >
