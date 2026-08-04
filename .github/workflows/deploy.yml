@@ -29,19 +29,9 @@ jobs:
       - name: Build Project
         run: npm run docs:build
 
-      - name: Deploy via tar with Password
+      - name: Deploy via independent script
         run: |
-          # 安装 sshpass
-          sudo apt-get update
-          sudo apt-get install -y sshpass
-
-          # 进入构建目录并打包
-          cd docs/.vitepress/dist
-          tar -czf /tmp/website.tar.gz .
-
-          # 传输压缩包
+          sudo apt-get update && sudo apt-get install -y sshpass
           export SSHPASS="${{ secrets.SERVER_PASSWORD }}"
-          sshpass -e scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /tmp/website.tar.gz ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/tmp/
-
-          # 在服务器上解压到指定的网站根目录
-          sshpass -e ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "mkdir -p /www/wwwroot/47.83.18.133_18040/justin3go.com/docs/.vitepress/dist && tar -xzf /tmp/website.tar.gz -C /www/wwwroot/47.83.18.133_18040/justin3go.com/docs/.vitepress/dist && rm /tmp/website.tar.gz"
+          chmod +x ./deploy.sh
+          ./deploy.sh
