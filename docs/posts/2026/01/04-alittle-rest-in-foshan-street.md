@@ -1,0 +1,39 @@
+---
+title: A little Rest in FoShan Street
+date: 2026-07-30
+tags:
+  - Travel
+  - Eating
+  - Library
+  - Essay
+---
+
+# A little Rest in FoShan Street
+
+**By Polya** · July 30th
+
+I n 666 and fucking  through the green waves of leaves in the gusty wind, when I got the news that Song Mengqi was coming. On this rainy summer morning, the library was still and quiet, but my heart was restless—I couldn't focus on my work, my pen frozen over the pages. Finally, a tall figure emerged from the crowd and rescued my numb body from the desk. Come noon, we grabbed lunch near the study room; I ordered my usual ten-yuan fried noodle cake, while Song Mengqi got a bowl of snail-rice noodles and black-bone chicken soup. The meal was so disgustingly salty that we could only numb our taste buds with soda.
+
+Back in the study, we ran
+
+That aernoon, Deyuan and I dragged Song Mengqi e sea of books, and we headed to my place for some good times. We started with *School Boy Run Away*, a classic puzzle-escape game—its dim, gloomy palette matched the overcast room perfectly. After a burst of tension and excitement, Song and Deyuan couldn't resist logging into *Sanguosha* on my computer, while I lay on the bed reading Lovecraftian horror. We figured that was how we'd while away the rest of the day.
+
+Then a cool breeze slipped through the window, bringing an unfamiliar freshness. Staring out at the darkening sky, I felt a sudden thrill.
+The idea of cycling hit me like a bolt. Without a second thought, I decided we were going out again. I pried the two away from their game, dashed outside to find a couple of shared bikes, and called them down. And so—a Shihulan 2000, a Meituan 500, and a Hello 800—we set off on another wild, untamed journey.
+
+The wind howled in our s; e heavy sky churned as if it might pour at any moment. We just pedaled forward, faster and faster. The two followed me, even though they knew my reckless riding would drag them to the most desolate and treacherous places. A mix of unease and exhilaration tugged at us as we embarked on this unknown route. At Quehua Avenue, I made a sharp turn into the northbound intersection—by the time they realized what was happening, it was too late. The broken, muddy road, the barren weeds, the roar of excavators—all signs that the path ahead was no joke.
+
+"You're not taking us to *Yantou*, are you?" Song Mengqi teased, knowing my tricky ways all too well. I didn't answer—just smirked.
+
+The road stretched endlessly ahead, distant skyscrapers hazy in the grey. We passed half-finished housing estates, completely deserted, while the dark tunnels of Metro Line 9 snaked beneath our feet and the river churned with muddy waves not far off. Song Mengqi started cracking yellow jokes again, and our laughter echoed through the empty streets. When an intersection finally loomed before us, Deyuan nearly screamed: "Are you kidding me? Where the hell are we?" There it was—the massive, pale-grey overpass of Zero Interchange, its coils of concrete towering above, traffic roaring past in a frenzy. My wheels kept spinning; I turned and pressed north.
+
+"Where are we going?" Song asked, utterly lost.  
+"Unknown," I replied coolly.
+
+I never let up, heading north without a pause. Song shouted futile protests from behind, but I just let his words dissolve in the wind. Before long, he started complaining about his Hello 800, so I swapped my Shihulan with him. We finally stopped when we reached the Yellow River Bridge.  
+"We're at least 30 kilometres from Minghui Haoting now," Deyuan calculated calmly. Cars whizzed down the bridge, splattering mud.
+
+Before they could react, I veered off onto a small path leading west, just before the bridge, and they had no choice but to chase. This trail was wild and little-trodden—a route I'd carefully scouted. Lush grass lined the way, eerily beautiful, damp air clinging to the thick greenery. Deeper trails branched off below the slopes. The river's moisture seeped into everything, and the already chilly weather made us shiver in our thin clothes. We pressed west, and their initial anxiety gave way to fascination with the haunting scenery. Yellow jokes and laughter again rang through that pristine land. The road seemed endless, stretching all the way to Huaiyin District. As time bled away in the infinite ride, the question of going home resurfaced, and Song grew increasingly restless. In that empty lane and heavy dampness, he started to feel hallucinatory, his unease mounting. Suddenly, he couldn't take it anymore—he roared and charged at me on his bike. I stomped on the pedals, knowing my Shihulan could outrun his. We flew like madmen, letting the bikes carry us to the farthest, wildest reaches. I don't know how long we rode, but then a lightning bolt split the gloomy sky, and a few raindrops touched my ears. Only then did I realise how late it was—so I finally gave the order to turn back.
+
+"That doesn't make any sense!" Song d. "Everyone else's rides are loops——yours is just backtracking!" The clouds churned overhead as our three wobbling bikes tore down that manic little path. I laughed like a maniac, pouring every ounce of passion into the speed, letting it all go.
+
