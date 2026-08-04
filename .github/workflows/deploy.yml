@@ -39,4 +39,4 @@ jobs:
           sshpass -p "${{ secrets.SERVER_PASSWORD }}" scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /tmp/dist.tar.gz ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/tmp/
           
           # 3. 在服务器上解压到目标目录
-          sshpass -p "${{ secrets.SERVER_PASSWORD }}" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "mkdir -p ${{ secrets.SERVER_TARGET }} && tar xzf /tmp/dist.tar.gz -C ${{ secrets.SERVER_TARGET }} && rm /tmp/dist.tar.gz"
+          sshpass -p "${{ secrets.SERVER_PASSWORD }}" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "mkdir -p \"${{ secrets.SERVER_TARGET }}\" && tar xzf /tmp/dist.tar.gz -C \"${{ secrets.SERVER_TARGET }}\" && rm /tmp/dist.tar.gz"
