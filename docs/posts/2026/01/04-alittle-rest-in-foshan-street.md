@@ -11,29 +11,21 @@ tags:
 # A little Rest in FoShan Street
 
 **By Polya** · July 30th
-
-I n 666 and fucking  through the green waves of leaves in the gusty wind, when I got the news that Song Mengqi was coming. On this rainy summer morning, the library was still and quiet, but my heart was restless—I couldn't focus on my work, my pen frozen over the pages. Finally, a tall figure emerged from the crowd and rescued my numb body from the desk. Come noon, we grabbed lunch near the study room; I ordered my usual ten-yuan fried noodle cake, while Song Mengqi got a bowl of snail-rice noodles and black-bone chicken soup. The meal was so disgustingly salty that we could only numb our taste buds with soda.
-
-Back in the study, we ran
-
-That aernoon, Deyuan and I dragged Song Mengqi e sea of books, and we headed to my place for some good times. We started with *School Boy Run Away*, a classic puzzle-escape game—its dim, gloomy palette matched the overcast room perfectly. After a burst of tension and excitement, Song and Deyuan couldn't resist logging into *Sanguosha* on my computer, while I lay on the bed reading Lovecraftian horror. We figured that was how we'd while away the rest of the day.
-
-Then a cool breeze slipped through the window, bringing an unfamiliar freshness. Staring out at the darkening sky, I felt a sudden thrill.
-The idea of cycling hit me like a bolt. Without a second thought, I decided we were going out again. I pried the two away from their game, dashed outside to find a couple of shared bikes, and called them down. And so—a Shihulan 2000, a Meituan 500, and a Hello 800—we set off on another wild, untamed journey.
-
-The wind howled in our s; e heavy sky churned as if it might pour at any moment. We just pedaled forward, faster and faster. The two followed me, even though they knew my reckless riding would drag them to the most desolate and treacherous places. A mix of unease and exhilaration tugged at us as we embarked on this unknown route. At Quehua Avenue, I made a sharp turn into the northbound intersection—by the time they realized what was happening, it was too late. The broken, muddy road, the barren weeds, the roar of excavators—all signs that the path ahead was no joke.
-
-"You're not taking us to *Yantou*, are you?" Song Mengqi teased, knowing my tricky ways all too well. I didn't answer—just smirked.
-
-The road stretched endlessly ahead, distant skyscrapers hazy in the grey. We passed half-finished housing estates, completely deserted, while the dark tunnels of Metro Line 9 snaked beneath our feet and the river churned with muddy waves not far off. Song Mengqi started cracking yellow jokes again, and our laughter echoed through the empty streets. When an intersection finally loomed before us, Deyuan nearly screamed: "Are you kidding me? Where the hell are we?" There it was—the massive, pale-grey overpass of Zero Interchange, its coils of concrete towering above, traffic roaring past in a frenzy. My wheels kept spinning; I turned and pressed north.
-
-"Where are we going?" Song asked, utterly lost.  
-"Unknown," I replied coolly.
-
-I never let up, heading north without a pause. Song shouted futile protests from behind, but I just let his words dissolve in the wind. Before long, he started complaining about his Hello 800, so I swapped my Shihulan with him. We finally stopped when we reached the Yellow River Bridge.  
-"We're at least 30 kilometres from Minghui Haoting now," Deyuan calculated calmly. Cars whizzed down the bridge, splattering mud.
-
-Before they could react, I veered off onto a small path leading west, just before the bridge, and they had no choice but to chase. This trail was wild and little-trodden—a route I'd carefully scouted. Lush grass lined the way, eerily beautiful, damp air clinging to the thick greenery. Deeper trails branched off below the slopes. The river's moisture seeped into everything, and the already chilly weather made us shiver in our thin clothes. We pressed west, and their initial anxiety gave way to fascination with the haunting scenery. Yellow jokes and laughter again rang through that pristine land. The road seemed endless, stretching all the way to Huaiyin District. As time bled away in the infinite ride, the question of going home resurfaced, and Song grew increasingly restless. In that empty lane and heavy dampness, he started to feel hallucinatory, his unease mounting. Suddenly, he couldn't take it anymore—he roared and charged at me on his bike. I stomped on the pedals, knowing my Shihulan could outrun his. We flew like madmen, letting the bikes carry us to the farthest, wildest reaches. I don't know how long we rode, but then a lightning bolt split the gloomy sky, and a few raindrops touched my ears. Only then did I realise how late it was—so I finally gave the order to turn back.
-
-"That doesn't make any sense!" Song d. "Everyone else's rides are loops——yours is just backtracking!" The clouds churned overhead as our three wobbling bikes tore down that manic little path. I laughed like a maniac, pouring every ounce of passion into the speed, letting it all go.
-
+终于到了全福分馆。我全程焦急地瞪着手表。今天早来了5分钟，结果队更长了。果然，等进去时已经没座了。
+无奈，只能悻悻离开。
+  本来是想陪德源的，在泉城书房做志愿者。如今只能投身别的分馆。我坐上了B70,打算去久违的佛山街分馆。那里曾给我不错的印象
+车到了银座商城，时隔一年，我再次站在了熟悉的地方。湛蓝的天幕下耸立着银座大厦，批着金皮反射着炽热的光。
+我走向那个被幽绿遮掩的寂静街巷——佛山街。几乎依旧是走了半天没找到地方。街道两旁是折线型排列的店铺，“泉城书房”的标识如此不
+起眼地挤在其中一个。店面虽小，里面却别有洞天。人之前都是满的，这是我第一次将包放在座位上，身边还有不少空座。书房里布置风格
+很文雅，氛围有一种心安的治愈风。即使什么也不做，在这里好好睡一觉也很合适。屋内的灯染了层暖色调，外面也渐渐感觉暗下来，似乎
+为了更好烘托。窗边起了雾，窗外真的恰到好处的下起雨——最近的雨下得也很随性。我想起来这的任务，于是将目光钉在书架上扫视。好在
+这里书门类分得很细，我环顾书架寻找字母Q，锁定它之后开始仔细检阅。我坚信我能找到——果然不出所料，最终，我欣然拿着找到的《解码
+生物电》，回到座位上津津有味地看起来。
+  可没过一会我的肚子就饿起来，目光在书上漫无目的地游荡，心里算计着附近的邵外婆。后来我无时无刻不想她！“现在正是饭点，人会很多，
+晚会吧”我尝试说服我自己，但身体已经不听使唤地离开了座位。后来，我几乎是跑着冲出了书房。外面雨不知何时已经不下了，骄阳的余光又开始渗入
+树荫，我冒着炎热不停向前。在街的末尾，我看到了熟悉的那家店。进店后，我毫不犹豫地点了一碗鸭血粉丝和一块葱油饼——15￥，当它们久违地出现在
+我面前，我竟分不出眼镜上是热气还是眼泪。依然十分烫，这是我最大的考验。我努力抑制住自己，先去接了一杯大麦茶，一边小口呷着，一边打量着眼前
+的诱惑。一直等到温度终于让它们顺从地进入我的口中，我开启了战斗。让味觉浸泡在美味的汤汁里，不时就两口葱油饼，蘸点辣椒酱，绝了！慢慢回味
+一遍后，我捧着大肚子心满意足地离开。
+  回到书房后，我写了会英语作业，然后决定离开。阳光穿过云块和与层层树荫，最终滤在街上，斑斑驳驳，极其不均。一路走来忽明忽暗，像是穿过不同
+天气，不同的时间。街景在明暗中不断变幻。光阴轮番照亮老街的角落，如同在静静讲述故事。走出街头，如同翻完一本书的尾页，然后心生感慨。
