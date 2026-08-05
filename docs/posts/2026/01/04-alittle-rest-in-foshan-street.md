@@ -1,5 +1,5 @@
 ---
-title: A little Rest in FoShan Street
+title: 佛山街小憩
 date: 2026-07-30
 tags:
   - Travel
@@ -8,9 +8,17 @@ tags:
   - Essay
 ---
 
-# A little Rest in FoShan Street
+# 佛山街小憩
 
 **By Polya** · July 30th
+
+> ✨文章摘要（AI生成）
+>
+<!-- DESC SEP -->
+>
+出行琐志——泉城书房佛山街分馆&邵外婆
+>
+<!-- DESC SEP -->
 
 终于到了全福分馆。我全程焦急地瞪着手表。今天早来了5分钟，结果队更长了。果然，等进去时已经没座了。
 无奈，只能悻悻离开。
