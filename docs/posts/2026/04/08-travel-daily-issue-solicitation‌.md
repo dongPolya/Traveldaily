@@ -39,7 +39,7 @@ tags:
 
 ## 进阶
 
-这个问题已经在[初级指南：快速开始]（/about)部分提及了，下面是更详细的说明：
+这个问题已经在- **[初级指南](http://traveldaily.top/about#%E5%A6%82%E4%BD%95%E9%A3%9F%E7%94%A8)**部分提及了，下面是更详细的说明：
 
 ### 1.去投稿
 
@@ -79,7 +79,9 @@ tags:
 友情报社：
 
 [预言家日报]（https://www.yyjrb.cn/）:魔法部官方专刊
+
 [唱唱反调]（https://www.harrypotter.com/discover/books）：追求新奇事物…
+
 [周末不迷茫]（https://fbll.asia/post/50）：优质新闻资讯聚合期刊
 
 
